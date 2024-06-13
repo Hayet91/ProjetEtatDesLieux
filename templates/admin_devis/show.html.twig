@@ -1,0 +1,58 @@
+{% extends 'base-backend.html.twig' %}
+
+{% block title %}Devis{% endblock %}
+
+{% block body %}
+    <h1>Devis</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ devi.id }}</td>
+            </tr>
+            <tr>
+                <th>TypesUtilisateurs</th>
+                <td>{{ devi.typesUtilisateurs }}</td>
+            </tr>
+            <tr>
+                <th>TypeDeBien</th>
+                <td>{{ devi.typeDeBien }}</td>
+            </tr>
+            <tr>
+                <th>BienMeuble</th>
+                <td>{{ devi.bienMeuble ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>CodePostal</th>
+                <td>{{ devi.codePostal }}</td>
+            </tr>
+            <tr>
+                <th>Ville</th>
+                <td>{{ devi.ville }}</td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td>{{ devi.phone }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ devi.email }}</td>
+            </tr>
+            <tr>
+                <th>Message</th>
+                <td>{{ devi.message }}</td>
+            </tr>
+            <tr>
+                <th>UpdatedAt</th>
+                <td>{{ devi.updatedAt ? devi.updatedAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_admin_devis_index') }}">back to list</a>
+
+    <a href="{{ path('app_admin_devis_edit', {'id': devi.id}) }}">edit</a>
+
+    {{ include('admin_devis/_delete_form.html.twig') }}
+{% endblock %}

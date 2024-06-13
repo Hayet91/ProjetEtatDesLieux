@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    
+<div class="container">
+<br>
+    <br>
+<div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <h1 class="display-5 mb-5 text-primary"> Nos services</h1>
+        </div>
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Liste des avantages -->
+            <ul class="avantages-list">
+                <li><i class="fas fa-check text-primary"></i>  Une disponibilité de 8h à 20h – du lundi au samedi</li>
+                <li><i class="fas fa-check text-primary"></i>  Une réactivité pour toutes vos interventions sous 24h</li>
+                <li><i class="fas fa-check text-primary"></i>  Un rapport d’état des lieux clair, précis, détaillé et documenté</li>
+                <li><i class="fas fa-check text-primary"></i>  Un rapport photo comprenant entre autre les clés, les compteurs, et les dégradations</li>
+                <li><i class="fas fa-check text-primary"></i>  Remises des 2 rapports sous 24h</li>
+                <li><i class="fas fa-check text-primary"></i>  Gestion des clés</li>
+                <li><i class="fas fa-check text-primary"></i>  Possibilité d’accéder à notre espace extranet afin d’y passer vos ordres de mission et d’y récupérer 7/24 vos rapports</li>
+                <li><i class="fas fa-check text-primary"></i>  Sauvegarde de vos rapports pendant 10 ans sur nos serveurs</li>
+                <li><i class="fas fa-check text-primary"></i>  Tarifs compétitifs</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <!-- Image -->
+            <img class="w-100" src="{{ asset('img/photos/immobilier2.jpg') }}" alt="Image">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+<br>
+    <br>
+<div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <h1 class="display-5 mb-5 text-primary">Nos engagements</h1>
+        </div>
+    <div class="row justify-content-center align-items-center" style="margin-top: 50px;">
+    <div class="col-md-6">
+    <!-- Image -->
+    <img class="w-100" src="{{ asset('img/photos/immobilier3.jpg') }}" alt="Image">
+    </div>
+        <div class="col-md-6">
+            <!-- Liste des avantages -->
+            <ul class="avantages-list text-left">
+                <li><i class="fas fa-check text-primary"></i>  Travail de qualité précis et documenté</li>
+                <li><i class="fas fa-check text-primary"></i>  Parfaite gestion des clés selon vos directives</li>
+                <li><i class="fas fa-check text-primary"></i>  Réactivité et disponibilité</li>
+                <li><i class="fas fa-check text-primary"></i>  Efficacité à intervenir rapidement</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<br>
+    
+    {% endblock %}
+    
+
+
