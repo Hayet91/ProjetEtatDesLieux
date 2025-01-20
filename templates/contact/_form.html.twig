@@ -1,27 +1,27 @@
 {{ form_start(form) }}
-<div class="row pt-5 contact-form-position ">
-    <div class="form-group col-md-6">
-        {{ form_label(form.nom, 'Votre nom :', {'label_attr': {'class': 'control-label'}}) }}
-        {{ form_widget(form.nom, {'attr': {'class': 'form-control border-primary' }}) }}
+<div class="row pt-5 contact-form-position mx-auto px-3 px-md-0" style="max-width: 1200px;">
+    <div class="form-group col-12 col-lg-6 mb-4">
+        {{ form_label(form.nom, 'Votre nom :', {'label_attr': {'class': 'form-label'}}) }}
+        {{ form_widget(form.nom, {'attr': {'class': 'form-control border-primary', 'style': 'padding: 15px; font-size: 18px;'}}) }}
     </div>
-    <div class="form-group col-md-6">
-        {{ form_label(form.email, 'Votre adresse e-mail :', {'label_attr': {'class': 'control-label'}}) }}
-        {{ form_widget(form.email, {'attr': {'class': 'form-control border-primary'}}) }}
+    <div class="form-group col-12 col-lg-6 mb-4">
+        {{ form_label(form.email, 'Votre adresse e-mail :', {'label_attr': {'class': 'form-label'}}) }}
+        {{ form_widget(form.email, {'attr': {'class': 'form-control border-primary', 'style': 'padding: 15px; font-size: 18px;'}}) }}
     </div>
-    <div class="form-group col-md-6">
-        {{ form_label(form.phone, 'Votre numéro de téléphone :', {'label_attr': {'class': 'control-label'}}) }}
-        {{ form_widget(form.phone, {'attr': {'class': 'form-control border-primary'}}) }}
+    <div class="form-group col-12 col-lg-6 mb-4">
+        {{ form_label(form.phone, 'Votre numéro de téléphone :', {'label_attr': {'class': 'form-label'}}) }}
+        {{ form_widget(form.phone, {'attr': {'class': 'form-control border-primary', 'style': 'padding: 15px; font-size: 18px;'}}) }}
     </div>
-    <div class="form-group col-md-6">
-        {{ form_label(form.sujet, 'Sujet de votre message :', {'label_attr': {'class': 'control-label'}}) }}
-        {{ form_widget(form.sujet, {'attr': {'class': 'form-control border-primary'}}) }}
+    <div class="form-group col-12 col-lg-6 mb-4">
+        {{ form_label(form.sujet, 'Sujet de votre message :', {'label_attr': {'class': 'form-label'}}) }}
+        {{ form_widget(form.sujet, {'attr': {'class': 'form-control border-primary', 'style': 'padding: 15px; font-size: 18px;'}}) }}
     </div>
-    <div class="form-group col-md-12">
-        {{ form_label(form.contenu, 'Votre message :', {'label_attr': {'class': 'control-label'}}) }}
-        {{ form_widget(form.contenu, {'attr': {'class': 'form-control border-primary'}}) }}
+    <div class="form-group col-12 mb-4">
+        {{ form_label(form.contenu, 'Votre message :', {'label_attr': {'class': 'form-label'}}) }}
+        {{ form_widget(form.contenu, {'attr': {'class': 'form-control border-primary', 'style': 'padding: 15px; font-size: 18px;'}}) }}
     </div>
-    <div class="form-group col-md-12 mt-3">
-        <button class="btn btn-primary btn-lg" style="border-radius: 30px";>{{ button_label|default('Envoyer le message') }}</button>
+    <div class="form-group col-12 text-center">
+        <button class="btn btn-primary w-auto px-5 py-3" style="font-size: 18px; border-radius: 30px;">{{ button_label|default('Envoyer') }}</button>
     </div>
 </div>
 {{ form_end(form) }}

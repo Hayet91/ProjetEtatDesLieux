@@ -5,10 +5,7 @@
 
 .avantages-list li {
     margin-bottom: 8px; /* Ajoute un espace entre chaque élément de la liste */
-
-   
     padding: 10px; /* Espace intérieur */
-   
 }
 
 p {
@@ -18,9 +15,6 @@ p {
 .top-minus-20 {
     top: -140px; /* ou une autre valeur appropriée */
 }
-
-
-
 .chiffrage {
     width: 50%; /* ou une valeur fixe comme 200px */
     height: auto; /* Cela maintient le rapport hauteur/largeur de l'image */
@@ -41,7 +35,6 @@ p {
     padding: 20px; /* Ajoute un espace intérieur de 20 pixels pour séparer les contenus du cadre */
     border-radius: 10px; /* Ajoute un arrondi aux coins du cadre */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère pour donner de la profondeur */
-  
 }
 
 .contact-form-position {
@@ -53,7 +46,27 @@ p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère pour donner de la profondeur */
     }
     
-  
+   /* Cacher les <h1> sur les petits écrans */
+@media (max-width: 767px) {
+    h1 {
+        display: none !important;
+    }
+    
+    .carousel-caption .alt-text {
+        display: block !important;
+    }
+}
+
+/* Afficher les <h1> sur les grands écrans */
+@media (min-width: 768px) {
+    .carousel-caption .alt-text {
+        display: none !important;
+    }
+}
+
+    
+    
+    
 
 
 
